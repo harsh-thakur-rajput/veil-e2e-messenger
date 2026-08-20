@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: veil_postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-veil_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-veil_password}
+      POSTGRES_DB: ${POSTGRES_DB:-veil_db}
+    ports:
+      - "5432:5432"
+    volumes:
+      - veil_pg_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  veil_pg_data:
