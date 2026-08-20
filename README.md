@@ -7,9 +7,14 @@ VEIL is a real-time, end-to-end encrypted (E2EE) messaging application built wit
 ---
 
 ## 📸 Screenshots
-*(Add your screenshots here: Login screen, Chat Interface with Ciphertext, and a Decrypted Message showing the 10-second timer)*
+### Login to VEIL
+![alt text](image.png)
 
----
+### End-to-End Encrypted Chat
+![alt text](image-1.png)
+
+### Volatile Decryption (10-Second Timer)
+![alt text](image-2.png)
 
 ## ✨ Features
 
@@ -52,47 +57,47 @@ VEIL uses a client-server architecture where the Fastify server acts purely as a
 * Docker Desktop (for PostgreSQL database)
 * Git
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/veil.git](https://github.com/YOUR_USERNAME/veil.git)
+git clone https://github.com/harsh-thakur-rajput/veil-e2e-messenger.git
 cd veil
 ```
-### 2. Install Dependencies
+## 2. Install Dependencies
 ```bash
 npm install
 ```
-### 3. Environment Variables
+## 3. Environment Variables
 
-## Copy the example environment file and set your secure session secret:
+### Copy the example environment file and set your secure session secret:
 ```bash
 cp .env.example .env
 ```
-### 4. Database Setup
+## 4. Database Setup
 
-## Start the PostgreSQL container and run Prisma migrations:
+### Start the PostgreSQL container and run Prisma migrations:
 ```bash
 docker compose up -d
 npx prisma migrate dev --name init
 npx prisma db seed
 ```
-# (Note: The seed script creates two test users: Harsh and Toni with passwords harsh_dev_password and toni_dev_password).
+### (Note: The seed script creates two test users: Harsh and Toni with passwords harsh_dev_password and toni_dev_password).
 
-### 5. Run Development Servers
+## 5. Run Development Servers
 ```bash
 npm run dev
 ```
-# Access the application at http://localhost:5173.
+### Access the application at http://localhost:5173.
 
 ### 🧪 Testing
 
-## VEIL includes an automated cryptographic test suite to mathematically prove that the encryption is sound, keys derive correctly, and tampered messages are rejected.
+### VEIL includes an automated cryptographic test suite to mathematically prove that the encryption is sound, keys derive correctly, and tampered messages are rejected.
 ```bash
 npm run test --workspace=apps/web
 ```
 
-### 🤝 Contributing (Open Source)
+## 🤝 Contributing (Open Source)
 
-## VEIL is an open-source project and we welcome contributions from the community! Whether it's fixing a bug, improving the UI, or building a complex cryptographic feature, your help is appreciated.
+### VEIL is an open-source project and we welcome contributions from the community! Whether it's fixing a bug, improving the UI, or building a complex cryptographic feature, your help is appreciated.
 
 # How to Contribute:
 
@@ -110,7 +115,7 @@ npm run test --workspace=apps/web
 
 ## Please ensure that any cryptographic changes include passing tests in crypto.test.ts and rely on standard audited APIs.
 
-### 🗺️ Roadmap & Good First Issues
+## 🗺️ Roadmap & Good First Issues
 
 ### Looking for something to build? Here are some features we want to bring to VEIL:
 
@@ -128,11 +133,5 @@ npm run test --workspace=apps/web
 
 ### VEIL is a robust demonstration of E2E principles and zero-knowledge architecture. However, it is an open-source project in active development. It does not currently implement Perfect Forward Secrecy and relies on static identity keys. Use for educational and developmental purposes.
 
-### 📄 License
-This project is licensed under the MIT License.
-
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
 ### 📄 License
 This project is licensed under the MIT License.
