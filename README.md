@@ -112,7 +112,7 @@ npm run test --workspace=apps/web
 
 ### 🗺️ Roadmap & Good First Issues
 
-## Looking for something to build? Here are some features we want to bring to VEIL:
+### Looking for something to build? Here are some features we want to bring to VEIL:
 
 * [ ] Perfect Forward Secrecy: Implement the Double Ratchet Algorithm to replace our static AES key derivation.
 
@@ -126,7 +126,7 @@ npm run test --workspace=apps/web
 
 ### 🛡️ Security Disclaimer
 
-## VEIL is a robust demonstration of E2E principles and zero-knowledge architecture. However, it is an open-source project in active development. It does not currently implement Perfect Forward Secrecy and relies on static identity keys. Use for educational and developmental purposes.
+### VEIL is a robust demonstration of E2E principles and zero-knowledge architecture. However, it is an open-source project in active development. It does not currently implement Perfect Forward Secrecy and relies on static identity keys. Use for educational and developmental purposes.
 
 ### 📄 License
 This project is licensed under the MIT License.
@@ -134,3 +134,5 @@ This project is licensed under the MIT License.
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
+### 📄 License
+This project is licensed under the MIT License.
