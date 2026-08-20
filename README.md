@@ -129,7 +129,7 @@ npm run test --workspace=apps/web
 
 * [ ] PWA Support: Make VEIL installable as a Progressive Web App for offline access.
 
-### 🛡️ Security Disclaimer
+## 🛡️ Security Disclaimer
 
 ### VEIL is a robust demonstration of E2E principles and zero-knowledge architecture. However, it is an open-source project in active development. It does not currently implement Perfect Forward Secrecy and relies on static identity keys. Use for educational and developmental purposes.
 
